@@ -1,0 +1,482 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 去除列表默认样式 */
+li {
+    list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+    vertical-align: middle;
+}
+
+/* 去除input默认样式 */
+input,
+button {
+    border: none;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+}
+
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* 版心：宽度固定，水平居中 */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* header模块开始 */
+.header {}
+
+.header-top {
+    height: 52px;
+    background-color: pink;
+}
+
+.header-top-content {
+    /* ps */
+    /* height: 52px;
+    background-color: aqua; */
+}
+
+.header-top-content ul li {
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    color: white;
+}
+
+.header-top-content ul li a {
+    float: left;
+    padding: 0 16px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+    color: white;
+}
+
+.header-top-content ul li:last-child a::before {
+    content: '';
+    display: inline-block;
+    margin: -3px 8px 0 0;
+    width: 11px;
+    height: 16px;
+    background: url(../images/sprites.png) -160px -70px;
+    vertical-align: middle;
+}
+
+.header-bottom {
+    height: 130px;
+    background-color: skyblue;
+}
+
+.header-bottom-content {
+    padding: 30px 0 0 25px;
+    box-sizing: border-box;
+    /* ps */
+    height: 130px;
+}
+
+.header-bottom-content .logo {
+    width: 207px;
+    height: 70px;
+
+}
+
+.header-bottom-content .logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-size: 100%;
+    font-size: 0;
+}
+
+.icon-logo {
+    font-size: 75px;
+    color: pink;
+}
+
+
+.header-bottom-content .nav {
+    margin-left: 40px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header-bottom-content .nav ul li {
+    float: left;
+    margin-right: 48px;
+}
+
+
+.header-bottom-content .nav ul li a:hover {
+    padding: 7px 0;
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+}
+
+.header-bottom-content .search {
+    position: relative;
+    margin: 24px 0 0 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header-bottom-content .search input {
+    padding: 4px 0 12px 31px;
+    width: 172px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.header-bottom-content .search::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png) -80px -70px;
+}
+
+.header-bottom-content .car {
+    position: relative;
+    margin: 28px 0 0 15px;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprites.png) -120px -70px;
+    /* ps */
+    /* background-color: hotpink; */
+}
+
+.header-bottom-content .car span {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    padding: 0 7px 1px 6px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 7px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* header模块结束 */
+
+/* footer模块开始 */
+.footer {
+    background-color: pink;
+}
+
+.footer-top {
+    height: 173px;
+    border-bottom: 1px solid #434343;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.footer-top .top-item {
+    width: 33.3%;
+    height: 173px;
+    text-align: center;
+    line-height: 173px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.footer-top .top-item::before {
+    content: '';
+    display: inline-block;
+    margin-right: 19px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer-top .top-item:nth-child(2):before {
+    background-position: -130px 0;
+}
+
+.footer-top .top-item:nth-child(3):before {
+    background-position: -65px 0;
+}
+
+.footer-bottom {
+    overflow: hidden;
+    height: 170px;
+
+}
+
+
+.footer-bottom p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.footer-bottom .about {
+    margin: 42px 0 20px 0;
+}
+
+.footer-bottom .about a {
+    margin: 0 10px;
+    color: #999;
+}
+
+.icon1 {
+    font-size: 50px;
+}
+
+/* footer模块结束 */
+
+/* banner模块开始 */
+.banner {
+    background-color: #f5f5f5;
+}
+
+.banner-main {
+    position: relative;
+    height: 500px;
+    /* ps */
+    background-color: palegoldenrod;
+}
+
+.banner-main .banner-list {
+    height: 500px;
+    /* ps */
+    background-color: palegreen;
+}
+
+
+.banner-main .banner-list ul li {
+    float: left;
+}
+
+.banner-main .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    /* ps */
+    background-color: rgba(54, 43, 66, 0.8);
+}
+
+.banner-main .aside ul li a {
+    display: block;
+    width: 251px;
+    height: 50px;
+    padding: 0 19px 0 36px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.banner-main .aside ul li a::after {
+    content: '';
+    margin-top: 19px;
+    float: right;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -40px -110px;
+}
+
+.banner-main .aside ul li a:hover {
+    background-color: #348dcd;
+}
+
+.banner-main .aside ul li a span {
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.banner-main .prev,
+.banner-main .next {
+    position: absolute;
+    top: 228px;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/sprites.png);
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+}
+
+.banner-main .prev {
+    left: 260px;
+    background-position: 13px -60px;
+}
+
+.banner-main .next {
+    right: 12px;
+    background-position: -24px -60px;
+}
+
+.icon-jiantou {
+    font-size: 45px;
+}
+
+.banner-main .controls {
+    position: absolute;
+    left: 680px;
+    bottom: 31px;
+}
+
+.banner-main .controls li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .43);
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.banner-main .controls .active {
+    background-color: #fff;
+}
+
+/* banner模块结束 */
+
+/* goods模块开始 */
+
+
+.goods-top {
+    padding: 48px 0 37px 0;
+    height: 29px;
+}
+
+.goods-top h3 {
+    height: 29px;
+    line-height: 1;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.goods-top span,
+.goods-top a {
+    margin: 11px;
+    height: 16px;
+    line-height: 1;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods-top span {
+    margin-left: 34px;
+}
+
+.goods-top a::after {
+    content: '';
+    margin-left: 13px;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: url(../images/sprites.png) 0 -110px;
+    vertical-align: middle;
+}
+
+.goods-bottom ul li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #fff;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.goods-bottom ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.goods-bottom ul li img {
+    width: 304px;
+    height: 305px;
+}
+
+.goods-bottom ul li .goods-name {
+    margin: 22px 0 19px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.goods-bottom ul li .goods-price {
+    height: 23px;
+    line-height: 1;
+    font-size: 23px;
+    color: #9a2e1f;
+    ;
+}
+
+.goods-bottom ul li .goods-price span {
+    margin-right: 4px;
+    font-size: 17px;
+}
+
+/* goods模块结束 */
